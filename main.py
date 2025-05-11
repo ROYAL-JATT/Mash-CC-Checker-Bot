@@ -11,7 +11,7 @@ bot = telebot.TeleBot(token, parse_mode="HTML")
 
 # Subscribers list (authorized users)
 subscriber = [
-    '6249257243', 
+    '6651109872', 
     '5442332281', 
     '5991909954', 
     '7303810912', 
@@ -109,8 +109,8 @@ def main(message):
 🔹 **Country**: {country} {country_emoji}
 🔹 **Bank**: {bank}
 🔹 **Bank URL**: {bank_url}
-🔹 **Checked By**: @abirxdhackz
-🔹 **Credit**: @abirxdhackz
+🔹 **Checked By**: 
+🔹 **Credit**: 
 """
                     bot.reply_to(message, details, parse_mode="Markdown")
 
@@ -118,7 +118,7 @@ def main(message):
         print(f"Error: {e}")
 
     bot.edit_message_text(chat_id=message.chat.id, message_id=processing_msg, 
-                          text="✅ Processing Completed!\nBot By: @abirxdhackz | Credit: @abirxdhackz")
+                          text="✅ Processing Completed!\nBot")
 
 @bot.callback_query_handler(func=lambda call: call.data == 'stop')
 def stop_callback(call):
