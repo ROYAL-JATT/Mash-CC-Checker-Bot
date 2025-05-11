@@ -12,10 +12,10 @@ bot = telebot.TeleBot(token, parse_mode="HTML")
 # Subscribers list (authorized users)
 subscriber = [
     '6651109872', 
-    '5442332281', 
-    '5991909954', 
-    '7303810912', 
-    '7886711162'
+    '6651109872', 
+    '6651109872', 
+    '6651109872', 
+    '6651109872'
 ]
 
 @bot.message_handler(commands=["start"])
